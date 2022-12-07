@@ -35,7 +35,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     @IBAction func addNewRobot(_ sender: UIBarButtonItem) {
-//        robots.append("BB-8")
+        robotStore.robots.append(Robot(name: "Sonny", color: "Silvery", cost: 123235234))
         tableView.reloadData()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetail" {
+            // typecast the destination controller
+            let detailController = segue.destination as! DetailViewController
+            // what data are we passing? the robot that was selected.
+            if let indexPath = tableView.indexPathForSelectedRow {
+                // assign a data member into the destination controller
+                detailController.robot = robotStore.robots[indexPath.row]
+            }
+        }
     }
 }

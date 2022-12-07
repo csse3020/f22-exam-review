@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Robot Place-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalExamReview" customModuleProvider="target" sceneMemberID="viewController">
@@ -59,6 +59,7 @@
                                             <outlet property="colorLabel" destination="FFN-gd-rHU" id="ohU-tN-NMt"/>
                                             <outlet property="costLabel" destination="jRp-KC-Zig" id="0Me-vE-7X8"/>
                                             <outlet property="nameLabel" destination="fhh-oF-ca3" id="Dwt-x9-B4E"/>
+                                            <segue destination="Iuj-hV-cdw" kind="show" identifier="showDetail" id="Crn-9i-EhY"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -77,7 +78,7 @@
                             <constraint firstItem="tOI-Ij-3Vd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WAE-EW-mgk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="IUu-jZ-wvy">
+                    <navigationItem key="navigationItem" title="Robot Place" id="IUu-jZ-wvy">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="uBW-3C-xMX">
                             <connections>
                                 <action selector="addNewRobot:" destination="BYZ-38-t0r" id="hZB-fg-3bt"/>
@@ -91,6 +92,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1003.0769230769231" y="3.5545023696682461"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Add-y9-IXN">
+            <objects>
+                <viewController id="Iuj-hV-cdw" customClass="DetailViewController" customModule="FinalExamReview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RPP-j9-3F1">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4W-g6-8Dn">
+                                <rect key="frame" x="174" y="141" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KZw-p6-KaN"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="B4W-g6-8Dn" firstAttribute="top" secondItem="KZw-p6-KaN" secondAttribute="top" constant="50" id="O3W-7O-oZI"/>
+                            <constraint firstItem="B4W-g6-8Dn" firstAttribute="centerX" secondItem="RPP-j9-3F1" secondAttribute="centerX" id="u2X-CG-mII"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UyG-OZ-cXe"/>
+                    <connections>
+                        <outlet property="nameLabel" destination="B4W-g6-8Dn" id="xD6-w1-oMq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U4e-kc-Qbh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1875" y="4"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fZR-en-8tm">

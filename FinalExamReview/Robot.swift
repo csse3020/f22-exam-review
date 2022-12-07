@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Robot {
+class Robot: Codable {
     
     var name: String
     var color: String

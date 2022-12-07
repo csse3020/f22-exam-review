@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF1CC9DC294131E100E80D83 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1CC9DB294131E100E80D83 /* DetailViewController.swift */; };
 		AFE3C615293E92580080AB5F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C614293E92580080AB5F /* AppDelegate.swift */; };
 		AFE3C617293E92580080AB5F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C616293E92580080AB5F /* SceneDelegate.swift */; };
 		AFE3C619293E92580080AB5F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFE3C618293E92580080AB5F /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AF1CC9DB294131E100E80D83 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		AFE3C611293E92580080AB5F /* FinalExamReview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalExamReview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFE3C614293E92580080AB5F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFE3C616293E92580080AB5F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,13 +67,14 @@
 				AFE3C614293E92580080AB5F /* AppDelegate.swift */,
 				AFE3C616293E92580080AB5F /* SceneDelegate.swift */,
 				AFE3C618293E92580080AB5F /* ViewController.swift */,
+				AF1CC9DB294131E100E80D83 /* DetailViewController.swift */,
 				AFE3C628293E99C00080AB5F /* RobotCell.swift */,
 				AFE3C62A293E9BC80080AB5F /* RobotStore.swift */,
+				AFE3C62C293E9BEA0080AB5F /* Robot.swift */,
 				AFE3C61A293E92580080AB5F /* Main.storyboard */,
 				AFE3C61D293E92590080AB5F /* Assets.xcassets */,
 				AFE3C61F293E92590080AB5F /* LaunchScreen.storyboard */,
 				AFE3C622293E92590080AB5F /* Info.plist */,
-				AFE3C62C293E9BEA0080AB5F /* Robot.swift */,
 			);
 			path = FinalExamReview;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				AFE3C615293E92580080AB5F /* AppDelegate.swift in Sources */,
 				AFE3C62D293E9BEA0080AB5F /* Robot.swift in Sources */,
 				AFE3C617293E92580080AB5F /* SceneDelegate.swift in Sources */,
+				AF1CC9DC294131E100E80D83 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
